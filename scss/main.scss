@@ -1,27 +1,52 @@
 @import "variables";
 
+body{
+  background-color:black;
+}
 #page1, #page2, #page3, #page4, {
+  position:relative;
   height:1000px;
   background-repeat:no-repeat;
-  background-position:top center;
-  background-size:contain;
-  margin-bottom: -15%;
+  background-position: center;
+  background-size:cover;
+  padding-top: 280px;
+  margin-bottom: -410px;
+
 }
 
-#page1{
-  height:1300px;
+#page1{padding-top:0%;
+  margin-bottom:-290px;
+  z-index:5;
+}
+
+
+
+.title-page{
+  padding-top:130px;
+}
+
+#page2{
+z-index:4;
+}
+
+#page3{
+  z-index:3;
+}
+
+#page4{
+z-index:2;
 }
 
 .navigation{
+display:flex;
+justify-content: center;
+align-items:center;
 background-position:center;
 background-size:cover;
-   width:50%;
-   height:100%;
-   text-align:center;
-   position:fixed;
-   padding-top:20%;
-   padding-left:2%;
-
+width:50%;
+height:100%;
+text-align:center;
+position:fixed;
 }
 
 .right-align{
@@ -30,18 +55,13 @@ background-size:cover;
   position:relative;
   float: right;
   clear: both;
-  padding-top:1%;
-
 }
-.title-page{
-padding-top:10%;
 
-}
 
 
 .navigation a {
   color:black;
-  font-size:2em;
+  font-size:1.5em;
 }
 
 .navigation a:hover {

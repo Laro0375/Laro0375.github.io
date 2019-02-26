@@ -8,17 +8,18 @@
   </head>
 
   <body>
-    <div class="container-fluid" style="background-image: url(../images/background.png)">
+    <div class="container-fluid" >
 
-      <div id="page1">
+      <div id="page1" class = "container-fluid" style="background-image: url(../images/background1.png)">
   <a id="homepage" class="smooth"></a>
   <div class="right-align title-page">
+
 <h1>Adrian Larocque</h1>
       <h2>The Odd One Out</h2>
       <img src="../images/mainphoto.png" alt="" width="100%"">
     </div>
 
-<div class="navigation" style="background-image: url(../images/dripping.png)">
+<div class="navigation container-fluid" style="background-image: url(../images/dripping.png)">
       <ul class="nav flex-column">
         <a href="#homepage">Home</a>
         <a href="#meetmepage">Meet Me</a>
@@ -30,21 +31,21 @@
 
     </div>
 
-    <div id="page2">
+    <div id="page2" class="container-fluid" style="background-image: url(../images/background3.png)">
 <a id="meetmepage" class="smooth"></a>
       <div class="right-align">
       <h2>Meet Me</h2>
       <button type="button" class="btn btn-primary">More About Me</button>
     </div>
     </div>
-    <div id="page3">
+    <div id="page3" class ="container-fluid" style="background-image: url(../images/background2.png)">
 <a id="myworkpage" class="smooth"></a>
 <div class="right-align">
       <h2>My Work</h2>
       <button type="button" class="btn btn-primary">View Gallery</button>
     </div>
   </div>
-    <div id="page4">
+    <div id="page4" class="container-fluid" style="background-image: url(../images/background4.png)">
 <a id="contactpage" class="smooth"></a>
 <div class="right-align">
       <h2>Contact Me</h2>
@@ -56,6 +57,32 @@
       </div>
     </div>
     </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
