@@ -61,7 +61,7 @@ body {
 .modal-content {
   padding: 40px;
   text-align: center;
-  background-color: red; }
+  background-color: white; }
 
 /* For desktop: */
 @media only screen and (min-width: 480px) {
