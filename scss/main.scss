@@ -77,13 +77,20 @@ z-index:2;
 .row{
   display:flex;
   justify-content: center;
+
 }
+
 
 .modal-content{
 
   padding:40px;
   text-align:center;
-  background-color:white;
+  padding-bottom:220px;
+background-size:cover;
+background-color:rgba(255, 0, 0, 0);
+
+
+
 }
 
 
