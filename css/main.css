@@ -32,7 +32,7 @@ body {
   width: 100%;
   text-align: center;
   position: relative;
-  float: right;
+  float: left;
   clear: both; }
 
 .navbar {
@@ -44,10 +44,24 @@ body {
 .navigation {
   display: none; }
 
-.gallerypagephoto {
-  height: 400px;
+.cellphoneimage {
+  width: 80%;
+  height: auto;
   float: right;
-  margin-top: -200px; }
+  margin-right: -5%; }
+
+.row img {
+  height: 200px;
+  margin: 10px; }
+
+.row {
+  display: flex;
+  justify-content: center; }
+
+.modal-content {
+  padding: 40px;
+  text-align: center;
+  background-color: red; }
 
 /* For desktop: */
 @media only screen and (min-width: 768px) {
@@ -60,6 +74,12 @@ body {
     position: relative;
     float: right;
     clear: both; }
+  .cellphoneimage {
+    width: 80%;
+    height: auto;
+    float: right;
+    margin-top: -30%;
+    margin-right: -5%; }
   #page1 {
     padding-top: 0%;
     margin-top: 0px;
