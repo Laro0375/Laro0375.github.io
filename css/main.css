@@ -65,6 +65,8 @@ body {
 
 /* For desktop: */
 @media only screen and (min-width: 768px) {
+  .navbar-toggler {
+    display: none; }
   #page2, #page3, #page4 {
     padding-top: 400px;
     padding-left: 100px; }
