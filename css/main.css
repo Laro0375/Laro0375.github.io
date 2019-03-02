@@ -11,7 +11,8 @@ body {
   margin-bottom: -410px; }
 
 #page1 {
-  padding-top: 0%;
+  padding-top: -250px;
+  margin-top: -250px;
   margin-bottom: -290px;
   z-index: 5; }
 
@@ -27,27 +28,58 @@ body {
 #page4 {
   z-index: 2; }
 
-.navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-size: cover;
-  width: 50%;
-  height: 100%;
-  text-align: center;
-  position: fixed; }
-
 .right-align {
-  width: 60%;
+  width: 100%;
   text-align: center;
   position: relative;
   float: right;
   clear: both; }
 
-.navigation a {
-  color: black;
-  font-size: 1.5em; }
+.navbar {
+  position: fixed; }
 
-.navigation a:hover {
-  color: red; }
+.navbar-toggler {
+  background-color: white; }
+
+.navigation {
+  display: none; }
+
+.gallerypagephoto {
+  height: 400px;
+  float: right;
+  margin-top: -200px; }
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  #page2, #page3, #page4 {
+    padding-top: 400px;
+    padding-left: 100px; }
+  .right-align {
+    width: 60%;
+    text-align: left;
+    position: relative;
+    float: right;
+    clear: both; }
+  #page1 {
+    padding-top: 0%;
+    margin-top: 0px;
+    margin-bottom: -290px; }
+  .nav {
+    margin-left: 30%; }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    margin-left: 10%; }
+  .navigation a {
+    color: black;
+    font-size: 1.5em; }
+  .navigation a:hover {
+    color: red; } }
