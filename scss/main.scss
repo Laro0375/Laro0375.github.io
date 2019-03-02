@@ -68,7 +68,7 @@ z-index:2;
 }
 
 .row img{
-  
+
   height:200px;
 
   margin: 10px;
@@ -89,7 +89,7 @@ z-index:2;
 
 
   /* For desktop: */
-@media only screen and (min-width: 768px) {
+@include media-breakpoint-only(lg) {
 
 #page2, #page3, #page4{
   padding-top: 400px;
