@@ -78,6 +78,13 @@ a {
   float: right;
   margin-right: -5%; }
 
+.portraitofme {
+  width: 50%;
+  height: auto;
+  float: right;
+  margin-top: 10%;
+  margin-right: 25%; }
+
 .row img {
   height: 200px;
   margin: 10px; }
@@ -112,6 +119,10 @@ a {
     float: right;
     margin-top: -30%;
     margin-right: -5%; }
+  .portraitofme {
+    width: 30%;
+    margin-top: -15%;
+    margin-right: 40%; }
   #page1 {
     padding-top: 0px;
     margin-top: 0px;
