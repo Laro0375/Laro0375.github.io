@@ -73,11 +73,12 @@ z-index:2;
   //nesting button to make buttons blocks
 .right-align{
   width:100%;
+  height:80%;
   text-align:center;
   position:relative;
   float: left;
   clear: both;
-  padding:0px;
+  padding-top:100px;
 
   .btn{
     margin:0 auto;
@@ -118,10 +119,7 @@ z-index:2;
 
 //Styling of main images
 .cellphoneimage{
-  width:80%;
-  height:auto;
-  float:right;
-  margin-right: -5%
+visibility:hidden;
 }
 .portraitofme{
 width:50%;
@@ -129,11 +127,10 @@ height:auto;
 float:right;
 margin-top:10%;
 margin-right:25%;
+visibility:hidden;
 }
 
-//configuring
-
-
+//configuring content in modals
 .row{
   display:flex;
   justify-content: center;
@@ -141,22 +138,18 @@ margin-right:25%;
     height:200px;
     margin:10px;
   }
-
 }
 
 .modal-dialog{
 height:60%;
 }
 .modal-content{
-
   padding:40px;
   text-align:center;
   padding-bottom:220px;
 background-size:cover;
+border: 0px solid black;
 background-color:rgba(255, 0, 0, 0);
-
-
-
 }
 
 
@@ -173,10 +166,11 @@ body{
 #page2, #page3, #page4{
   padding-top: 400px;
   padding-left:100px;
-
 }
+
   .right-align{
     width:60%;
+    padding-top:0px;
     text-align:left;
     position:relative;
     float: right;
@@ -184,20 +178,24 @@ body{
 
   }
 
-// Making images responsive
+// images appear
   .cellphoneimage{
+    float:right;
     width:80%;
     height:auto;
     float:right;
     margin-top:-30%;
-    margin-right: -5%
+    margin-right: -5%;
+    visibility:visible;
   }
   .portraitofme{
+    height:auto;
+    float:right;
   width:30%;
   margin-top:-15%;
   margin-right:30%;
+  visibility:visible;
   }
-
 
 
   #page1{
@@ -210,12 +208,10 @@ body{
     }
   }
 
-
   .nav{
     margin-left:30%;
   }
   .navigation{
-
   display:flex;
   justify-content: center;
   align-items:center;
@@ -231,14 +227,14 @@ body{
   }
 .navigation a {
   color:black;
-  font-size:1.5em;
+  font-size:$smallestfont;
 }
 
 .navigation a:hover {
-  color:red;
+  color:$burntcoral;
 }
 
-
+//making buttons inline block
 .right-align{
 
 .btn{
