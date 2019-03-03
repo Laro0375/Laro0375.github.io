@@ -1,6 +1,12 @@
 @font-face {
   font-family: 'hollysharpiemedium';
-  src: url("hollysharpie-webfont.ttf") format("ttf"), url("hollysharpie-webfont.woff2") format("woff2"), url("hollysharpie-webfont.woff") format("woff");
+  src: url("../fonts/hollysharpie-webfont.ttf") format("ttf"), url("../fonts/hollysharpie-webfont.woff2") format("woff2"), url("../fonts/hollysharpie-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'theskinny';
+  src: url("../fonts/TheSkinny-bold.otf") format("otf"), url("../fonts/theskinny-bold-webfont.woff2") format("woff2"), url("../fonts/theskinny-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -8,7 +14,13 @@ body {
   background-color: black; }
 
 h1 {
-  font-family: 'hollysharpiemedium'; }
+  font-family: theskinny; }
+
+h2 {
+  font-family: hollysharpiemedium; }
+
+a {
+  font-family: theskinny; }
 
 #page1, #page2, #page3, #page4 {
   position: relative;
@@ -42,13 +54,14 @@ h1 {
   text-align: center;
   position: relative;
   float: left;
-  clear: both; }
+  clear: both;
+  padding: 0px; }
+  .right-align .btn {
+    margin: 0 auto;
+    display: block; }
 
 .btn {
-  text-align: center; }
-
-.right-align .btn {
-  padding-right: 50px; }
+  font-family: theskinny; }
 
 .navbar {
   position: fixed; }
@@ -81,7 +94,7 @@ h1 {
   background-color: rgba(255, 0, 0, 0); }
 
 /* For desktop: */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .navbar-toggler {
     display: none; }
   #page2, #page3, #page4 {
@@ -100,9 +113,12 @@ h1 {
     margin-top: -30%;
     margin-right: -5%; }
   #page1 {
-    padding-top: 0%;
+    padding-top: 0px;
     margin-top: 0px;
     margin-bottom: -290px; }
+    #page1 .right-align {
+      padding-top: 100px;
+      text-align: center; }
   .nav {
     margin-left: 30%; }
   .navigation {
@@ -122,4 +138,6 @@ h1 {
     color: black;
     font-size: 1.5em; }
   .navigation a:hover {
-    color: red; } }
+    color: red; }
+  .right-align .btn {
+    display: inline-block; } }
