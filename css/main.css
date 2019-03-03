@@ -70,11 +70,15 @@ a {
   border: 3px solid #b57f75;
   box-shadow: 5px 10px 18px black;
   position: relative; }
+  .btn a {
+    color: black; }
 
 .btn:hover {
   background-color: #b57f75;
   border: 3px solid #e0a49a;
   color: white; }
+  .btn:hover a {
+    color: white; }
 
 .navbar {
   position: fixed; }
