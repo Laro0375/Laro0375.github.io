@@ -104,6 +104,9 @@ a {
     height: 200px;
     margin: 10px; }
 
+.modal-dialog {
+  height: 60%; }
+
 .modal-content {
   padding: 40px;
   text-align: center;
