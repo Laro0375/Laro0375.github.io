@@ -1,18 +1,9 @@
 @import "variables";
 @font-face {
     font-family: 'hollysharpiemedium';
-    src: url('HollySharpie.ttf') format('ttf'),
+    src: url('hollysharpie-webfont.ttf') format('ttf'),
          url('hollysharpie-webfont.woff2') format('woff2'),
          url('hollysharpie-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'the_skinnybold';
-    src: url('TheSkinny-bold.otf') format('otf'),
-         url('theskinny-bold-webfont.woff2') format('woff2'),
-         url('theskinny-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,10 +12,7 @@ body{
   background-color:black;
 }
 h1{
-  font-family:the_skinnybold;
-}
-h2{
-  font-family:hollysharpiemedium;
+  font-family:'hollysharpiemedium';
 }
 
 #page1, #page2, #page3, #page4, {
